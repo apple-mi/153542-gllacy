@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="utf_8">
+		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
 	</head>
 	<body>
@@ -58,60 +58,68 @@
 				</ul>
 				<div class="container_filter">
 					<h1>Сливочное мороженое</h1>
-					<div class="sorting">
-						<span>Сортировка:</span>
-						<a href="#">по популярности</a>
-					</div>
-					<div class="range_filter">
-						<div class="price_controls">
-							<span>Цена: 100 руб. – 500 руб.</span>
-						</div>
-						<div class="range_controls">
-							<div class="scale"><div class="bar"></div></div>
-							<div class="toggle min_toggle"></div>
-							<div class="toggle max_toggle"></div>
-						</div>
-					</div>
 					<form class="fat_status" action="https://echo.htmlacademy.ru" method="post">
-						Жирность:
-						<div class="fatness">
-							<input type="radio" name="fatness" id="0%">
-							<label for="0%">0%</label>
+						<div class="block1_sorting">
+							<div class="sorting">
+								<h3>Сортировка:</h3>
+								<a href="#">по популярности</a>
+							</div>
+							<div class="range_filter">
+								<div class="price_controls">
+									<h3>Цена: <span>100</span> руб. – <span>500</span> руб.</h3>
+								</div>
+								<div class="range_controls">
+									<div class="scale"><div class="bar"></div></div>
+									<div class="toggle min_toggle"></div>
+									<div class="toggle max_toggle"></div>
+								</div>
+							</div>
+							<div class="block_fatness">
+								<h3>Жирность:</h3>
+								<div class="fatness">
+									<input type="radio" name="fatness" id="0">
+									<label for="0">0%</label>
+								</div>
+								<div class="fatness">
+									<input type="radio" name="fatness" id="10" checked>
+									<label for="10">до 10%</label>
+								</div>
+								<div class="fatness">
+									<input type="radio" name="fatness" id="30">
+									<label for="30">до 30%</label>
+								</div>
+								<div class="fatness">
+									<input type="radio" name="fatness" id="31">
+									<label for="31">выше 30%</label>
+								</div>
+							</div>
 						</div>
-						<div class="fatness">
-							<input type="radio" name="fatness" id="10%" checked>
-							<label for="10%">до 10%</label>
+						<div class="block2_sorting">
+							<div class="block_filler">
+								<h3>Наполнители:</h3>
+								<div class="filler">
+									<input type="checkbox" name="filler" id="chocolate" checked>
+									<label for="chocolate">шоколадные</label>
+								</div>
+								<div class="filler">
+									<input type="checkbox" name="filler" id="sugar" checked>
+									<label for="sugar">сахарные присыпки</label>
+								</div>
+								<div class="filler">
+									<input type="checkbox" name="filler" id="fruit">
+									<label for="fruit">фрукты</label>
+								</div>
+								<div class="filler">
+									<input type="checkbox" name="filler" id="syrup">
+									<label for="syrup">сиропы</label>
+								</div>
+								<div class="filler">
+									<input type="checkbox" name="filler" id="jam">
+									<label for="jam">джемы</label>
+								</div>
+								<button type="submit">Применить</button>
+							</div>
 						</div>
-						<div class="fatness">
-							<input type="radio" name="fatness" id="30%">
-							<label for="30%">до 30%</label>
-						</div>
-						<div class="fatness">
-							<input type="radio" name="fatness" id=">30%">
-							<label for=">30%">выше 30%</label>
-						</div>
-						Наполнители:
-						<div class="fatness">
-							<input type="checkbox" name="fatness" id="chocolate" checked>
-							<label for="chocolate">шоколадные</label>
-						</div>
-						<div class="fatness">
-							<input type="checkbox" name="fatness" id="sugar" checked>
-							<label for="sugar">сахарные присыпки</label>
-						</div>
-						<div class="fatness">
-							<input type="checkbox" name="fatness" id="fruit">
-							<label for="fruit">фрукты</label>
-						</div>
-						<div class="fatness">
-							<input type="checkbox" name="fatness" id="syrup">
-							<label for="syrup">сиропы</label>
-						</div>
-						<div class="fatness">
-							<input type="checkbox" name="fatness" id="jam">
-							<label for="jam">джемы</label>
-						</div>
-						<button type="submit">Показать</button>
 					</form>
 				</div>
 				<div class="catalog_container">
@@ -236,12 +244,16 @@
 						 </div>
 					</div>
 				</div>
-    			<div class="paging">
-					<a class="current" href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<a href="#">5</a>
+    			<div class="pagination">
+					<ul>
+						<li><a href="#" class="prev"></a></li>
+						<li><a class="active" href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#" class="next"></a></li>
+					</ul>
 				</div>
 		</main>
 		<footer>
