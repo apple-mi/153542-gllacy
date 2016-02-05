@@ -2,12 +2,13 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 		<title>HTML Academy: Глейси</title>
 	</head>
-	<body>
+<body>
 		<header class="main_header">
-			<div class="header_container">
+			<div class="header_container clearfix">
 				<div class="right_item_container">
 					<div class="right_item">
 						<div class="search_block">
@@ -41,11 +42,10 @@
 						</li>
 					</ul>
 				</nav>
-				
 			</div>	
 		</header>
 		<main class="main_container">
-			<div class="container">
+			<div class="container clearfix">
 				<ul class="breadcrumbs">
 					<li>
 						<a href="#">Главная</a>
@@ -57,17 +57,17 @@
 						Сливочное
 					</li>
 				</ul>
-				<div class="container_filter">
+				<div class="container_filter clearfix">
 					<h1>Сливочное мороженое</h1>
-					<form class="fat_status" action="https://echo.htmlacademy.ru" method="post">
-						<div class="block1_sorting">
+					<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+						<div class="block_sorting">
 							<div class="sorting">
-								<h3>Сортировка:</h3>
+								<h4>Сортировка:</h4>
 								<a href="#">по популярности</a>
 							</div>
 							<div class="range_filter">
 								<div class="price_controls">
-									<h3>Цена: <span>100</span> руб. – <span>500</span> руб.</h3>
+									<h4>Цена: <span>100</span> руб. – <span>500</span> руб.</h4>
 								</div>
 								<div class="range_controls">
 									<div class="scale"><div class="bar"></div></div>
@@ -76,7 +76,7 @@
 								</div>
 							</div>
 							<div class="block_fatness">
-								<h3>Жирность:</h3>
+								<h4>Жирность:</h4>
 								<div class="fatness">
 									<input type="radio" name="fatness" id="0">
 									<label for="0">0%</label>
@@ -95,9 +95,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="block2_sorting">
+						<div class="block_sorting">
 							<div class="block_filler">
-								<h3>Наполнители:</h3>
+								<h4>Наполнители:</h4>
 								<div class="filler">
 									<input type="checkbox" name="filler" id="chocolate" checked>
 									<label for="chocolate">шоколадные</label>
@@ -256,15 +256,16 @@
 						<li><a href="#" class="next"></a></li>
 					</ul>
 				</div>
+			</div>
 		</main>
 		<footer>
-			<div class="container">
+			<div class="container main_footer clearfix">
 				<div class="footer_social">
 					<section class="footer_social">
 						<a class="social_btn social_btn_tvit" href="#">Твитер</a>
 						<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
 						<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-						<a class="social_btn social_btn_vk" href="#">Вконтакте</a>			
+						<a class="social_btn social_btn_vk" href="#">Вконтакте</a>
 					</section>
 				</div>
 				<div class="footer_center">
