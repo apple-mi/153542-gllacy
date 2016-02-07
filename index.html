@@ -12,7 +12,7 @@
 		<input class="hide" type="radio" name="ground_color" id="brown_3">
 		<div class="wrapper">
 			<header class="main_header">
-				<div class="header_container clearfix">
+				<div class="container clearfix">
 					<div class="right_item_container">
 						<div class="right_item">
 							<div class="search_block">
@@ -52,14 +52,16 @@
 				<div class="container">
 					<div class="main_slide">
 						<div class="slide">
-							<div class="text_slide">
-								<span class="green_1">Крем-брюле и пломбир с малиновым джемом</span>
-								<span class="violet_2">Шоколадный пломбир и лимонный сорбет</span>
-								<span class="brown_3">Пломбир с помадкой и клубничный щербет</span>
-							</div>
-							<div class="button_slide">
+							<div class="green_1">
+								<span class="text_slide">Крем-брюле и пломбир с малиновым джемом</span>
 								<a class="btn button_1" href="#">Давайте оба!</a>
+							</div>
+							<div class="violet_2">
+								<span class="text_slide">Шоколадный пломбир и лимонный сорбет</span>
 								<a class="btn button_2" href="#">Давайте оба!</a>
+							</div>
+							<div class="brown_3">
+								<span class="text_slide">Пломбир с помадкой и клубничный щербет</span>
 								<a class="btn button_3" href="#">Давайте оба!</a>
 							</div>
 						</div>
@@ -69,15 +71,15 @@
 							<label for="brown_3">3</label>
 						</div>
 					</div>
-					<div class="free_container clearfix">
-						<div class="raspberry block_free">
-							<h2>Малинка даром!</h2>
-							<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<div class="free_container">
+						<div class=" block_free">
+							<h2 class="raspberry">Малинка даром!</h2>
+							<p class="raspberry">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 							<a class="btn" href="#">Хочу варенье!</a>
 						</div>
-						<div class="chocolate block_free">
-							<h2>Шоколадки даром!</h2>
-							<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+						<div class="block_free">
+							<h2 class="chocolate">Шоколадки даром!</h2>
+							<p class="chocolate">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 							<a class="btn" href="#">Хочу шоколадки!</a>
 						</div>
 					</div>
@@ -129,58 +131,53 @@
 							<img src="" alt="mini_ice_cream">
 							<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 						</div>
+						<div class="cow block_info">
+							<img src="" alt="cow">
+							<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+						</div>	           
 						<div class="leaflet block_info">
 							<img src="" alt="leaflet">
 							<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
 						</div>
-						<div class="cow block_info">
-							<img src="" alt="cow">
-							<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-						</div>	
 						<div class="thermometer block_info">
 							<img src="" alt="thermometer">
 							<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
 						</div>
 					</div>
 					<div class="news_delivery clearfix">
-						<div class="news">
-							<div class="news_img">
-								<img src="" alt="news_img">
-							</div>
-							<span>Новое в нашем блоге</span>
+						<div class="block_n_d">
+											<p class"news">Новое в нашем блоге</p>
 							<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
 							</div>
-						<div class="delivery"> 
-							<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+						<div class="block_n_d"> 
+							<p class="delivery">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 							<form action="" method="post">
 								<input type="text" name="email" placeholder="Электронная почта">
 								<button class="btn" type="submit">Отправить</button>
 							</form>
 						</div>
 					</div>
-					<div class="map clearfix">
-						<div class="index_content_right">
-							<div class="white_block">
-								<img src="" alt="white_block">
-							</div>
-							<p>
-								Адрес главного офиса и<br> 
-								офлайн магазина:
-								<span>ул. Большая Конюшенная 19/8,<br>
-								Санкт-Петербург</span>
-							</p>
-							<p>
-								Для заказов по телефону:<br>
-								<span>8 812 450-25-25</span><br>
-								(с 10 до 20 ежедневно)
-							</p>
-							<a class="btn" href="#">Форма обратной связи</a>
-						</div>
-					</div>
 				</div>
 			</main>
-			<footer>
-				<div class="container main_footer clearfix">
+			<div class="map_wrapper">
+						
+				<div class="map_container">
+					<div class="container_contacts">
+						<p>Адрес главного офиса и<br> 
+							офлайн магазина:
+							<span>ул. Большая Конюшенная 19/8,<br>
+							Санкт-Петербург</span>
+						</p>
+						<p>Для заказов по телефону:<br>
+							<span>8 812 450-25-25</span><br>
+							(с 10 до 20 ежедневно)
+						</p>
+						<a class="btn" href="#">Форма обратной связи</a>
+					</div>
+				</div>
+			</div>
+			<footer class="main_footer">
+				<div class="container clearfix">
 					<div class="footer_social">
 						<section class="footer_social">
 							<a class="social_btn social_btn_tvit" href="#">Твитер</a>
