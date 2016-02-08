@@ -60,15 +60,19 @@ h4 {
 	padding: 0 10px;
 	float: right;
 }
+.main_navigation {
+	min-width: 560px;
+	float: left;
+	margin-top: 30px;
+}
 .logo {
 	float: left;
 	margin-right: 30px;
 	margin-top: 10px;
 }
-.main_navigation {
-	width: 350px;
+.navigation {
 	float: left;
-	margin-top: 30px;
+	min-width: 400px;
 }
 .main_header, .main_container, .main_footer {
 	min-width: 900px;
@@ -86,6 +90,7 @@ h4 {
 .slide {
 	padding-top: 315px;
 	min-height: 249px;
+	text-align: center;
 }
 .text_slide {
 	width: 55.8%;
@@ -156,7 +161,7 @@ h4 {
 	margin-right: 0;
 }
 p {
-  font-weight: normal;
+	font-weight: normal;
 }
 .news_delivery {
  	margin-bottom: 40px;
@@ -188,22 +193,22 @@ p {
 	max-height: 350px;
 }
 .main_footer {
-	margin-top: 20px; 
+	margin-top: 20px;
+	text-align: center;
 }
 .footer_social {
 	float: left;
-	margin-right: 214px;
-	width: 186px;
+	min-width: 186px;
 	margin-top:15px;
 }
 .footer_center {
-	float: left;
-	width: 304px;
+	display: inline-block;
+	min-width: 304px;
 	margin-top: 15px;
 }
 .footer_logo {
 	float: right;
-	width: 189px;
+	min-width: 190px;
 }
 .breadcrumbs {
 	float: left;
