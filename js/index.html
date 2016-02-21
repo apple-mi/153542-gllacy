@@ -32,14 +32,10 @@
 												<input id="email" type="text" placeholder="Электроная почта"></input>
 												<input id="password" type="password" placeholder="Пароль"></input>
 												<label for="email"></label>
-												<label for="password"></label>
-												<div class="enter">
-													<input class="btn" type="sumbit" value="Войти"></input>
-												</div>
-												<div class="links">
-													<a class="forgot_password" href="#">Забыли пароль?</a>
-													<a class="new_registration" href="#">Новая регистрация</a>
-												</div>
+												<label for="pasword"></label>
+												<input class="btn enter" type="sumbit" value="Войти"></input>
+												<a class="forgot_password" href="#">Забыли пароль?</a>
+												<a class="new_registration" href="#">Новая регистрация</a>
 											</form>
 										</div>
 								</div>
@@ -55,6 +51,7 @@
 						<div class="logo">
 								<img src="img/logo.svg" alt="Логотип" width="155" height="65">
 							</div>
+
 						<nav class="main_navigation clearfix">
 							
 							<ul class="navigation">
@@ -187,27 +184,23 @@
 							</div>
 						</div>
 				</main>
-				
-				<div class="map_wrapper">
-					<div id="yandex-map"></div>
-					
-				
-					<div class="map_container">
+				<!-- <div class="map_wrapper">
 						
+					<div class="map_container">
+						<div class="container_contacts">
 							<p>Адрес главного офиса и<br> 
-								офлайн магазина:<br>
-								<span>ул. Большая Конюшенная 19/8,Санкт-Петербург</span>
+								офлайн магазина:
+								<span>ул. Большая Конюшенная 19/8,<br>
+								Санкт-Петербург</span>
 							</p>
 							<p>Для заказов по телефону:<br>
 								<span>8 812 450-25-25</span><br>
 								(с 10 до 20 ежедневно)
 							</p>
-							<a class="btn form_btn" href="#">Форма обратной связи</a>
-					
+							<a class="btn" href="#">Форма обратной связи</a>
+						</div>
 					</div>
-				</div> 
-				
-
+				</div> -->
 				<footer class="main_footer container clearfix">
 						<div class="footer_ social">
 							<section class="footer_social">
@@ -217,64 +210,37 @@
 								<a class="social_btn social_btn_vk" href="#"></a>
 							</section>
 						</div>
-						
-							
-		
-						<div class="footer_logo">
-							<div class="logo_htmlacademy">
-								<img alt="logo_htmlacademy" src="img/logo_htmlacademy.svg" width="107" height="37">
-							</div>
-							<span class="htmlacademy">Сделано в HTML Academy © 2016</span>
-						</div>
 						<div class="footer_center clearfix">
 							
 								<div class="center_1 center">
-								
+								<!-- <div class="center"> -->
 										<a class="heart" href="#">Для поставщиков</a>
-									
+									<!--</div> 
+									<div class="center"> -->
 										<a href="#">О производстве</a>
-									
+									<!--</div> -->
 								</div>
 								<div class="center_2 center">
-									
+									<!--<div class="center"> -->
 										<a href="#">Наши документы</a>
-									
+									<!--</div>
+									<div class="center"> -->
 										<a href="#">Экологические стандарты</a>
-									
+									<!--</div> -->
 								</div>
+							
+						</div>
+						<div class="footer_logo">
+							<div class="logo_htmlacademy">
+								<img src="" alt="logo_htmlacademy">
+							</div>
+							<span class="htmlacademy">Сделано в HTML Academy © 2016</span>
 						</div>
 				</footer>
-
-				<div class="modal_content modal_content_show">
-					<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
-					<h3 class="modal_content_title">Мы обязательно вам ответим!</h3>
-					<form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
-						<input type="text" placeholder="Как вас зовут?"></input>
-						<input type="text" placeholder="Ваша почта для ответа?"></input>
-						<textarea name="text" cols="30" rows="5" placeholder="Напишите что нибудь..."></textarea>
-							
-						<input class="btn" type="sumbit" value="Отправить"></input>
-					</form>
+				<div>
+					
 				</div>
-				<div class="modal_overlay"></div>
 			</div>
-			</div>
-	
-		<script type="text/javascript">
-			var link = document.querySelector(".form_btn");
-			var popup = document.querySelector(".modal_content");
-			var close = popup.querySelector(".modal_content_close");
-
-			link.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.add("modal_content_show");
-			});
-			close.addEventListener("click", function(event) {
-				event.preventDefault();
-        		popup.classList.remove("modal_content_show");
-     		 });
-
-			</script>
-			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=slsxdqHWwdY-5qFIqNVyHxP3btxri642&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map"></script>
+  		</div>
 	</body>
 </html>
