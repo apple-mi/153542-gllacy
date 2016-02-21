@@ -412,11 +412,11 @@ h3 {
 	min-height:171px;
 	display: none;	
 }
-.list  li{
+.list li {
 	width: 143px;
 	padding: 0px;
 }
-.list  a {
+.list a {
 	color: #343434;
 	font-size: 14px;
 	font-weight: 400;
@@ -430,13 +430,25 @@ h3 {
 li:hover .list {
 	display: block;
 }
-.bdr {
-	border-bottom: 1px solid #ccc;
+.bdr:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	top: 38px;
+	left: 6px;
+	right: 9px;
+	background-color: rgba(53,53,53,0.2); 
 	padding: 0;
+	
 }
 
 .list a:hover {
 	background-color: #fbded7;
+
+}
+.list a:active {
+	background-color: #f6b5a5;
+	box-shadow: none;
 
 }
 .container {
@@ -802,7 +814,22 @@ li:hover .list {
 	display: inline-block;
 	font-size: 24px;
 	width: 295px;
+	text-decoration: none;
+	position: relative;
 }
+.news a:hover {
+	color: #ec593c;
+
+}
+/*.news a:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	background-color: red;
+}*/
 .delivery {
 	display: inline-block;
 	font-size: 16px;
@@ -1111,20 +1138,20 @@ li:hover .list {
 	width: 165px;
 	float: left;
 }
-.footer_center a {
+.center a {
 	list-style: none;
 	font-weight: 400;
 	color: #ffffff;
 	font-size: 13px;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 	padding-bottom: 2px;
 	position: relative;
-	padding: 0 1px;
-	width: 100%;
 }
-
-.footer_center a:after {
+.center a:hover {
+	color: #ffbc9e;
+}
+.center a:after {
 	content: "";
 	position: absolute;
 	height: 1px;
@@ -1132,8 +1159,10 @@ li:hover .list {
 	bottom: 2px;
 	left: 0;
 	
-	
 	background-color: rgba(230, 235, 233, 0.4);
+}
+.center a:hover:after {
+	background-color: rgba(249, 172, 159, 0.3);
 }
 .footer_logo {
 	float: right;
@@ -1168,9 +1197,23 @@ li:hover .list {
 .breadcrumbs a {
 	color: #ffffff;
 	text-decoration: none;
+	position: relative;
 }
-
-
+.breadcrumbs a:before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	top: 16px;
+	left: 0;
+	right: 0;
+	background-color: rgba(253,254,254,0.4);
+}
+.breadcrumbs a:hover {
+	color: #ffbc9e;
+}
+.breadcrumbs a:hover:before {
+	background-color: rgba(249,172,159,0.3);
+}
 
 .breadcrumbs a:after {
 	content: "";
@@ -1365,13 +1408,33 @@ li:hover .list {
 .button {
 	float: left;
 	width: 144px;
-	margin-top: 37px;
+	margin-top: 25px;
 	margin-left: 14px;
-	color: black;						/*https://htmlacademy.ru/courses/51/run/12 тень на кнопке*/
+	color: black;
+	
 	
 }
-.button button {
+.button .btn_button {
+	display: inline-block;
+	padding: 7px 45px;
 
+	font-weight: 500;
+	font-size: 16px;
+	vertical-align: top;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: none;
+	border: none;
+	background-color: rgba(251,252,251,0.2);
+	border-radius: 18px;
+	box-shadow: inset 0 0 0 2px #fbfcfb;
+}
+.button .btn_button:hover {
+	background-color: rgba(251,252,251);
+	color: #363636;
+}
+.button .btn_button:active {
+	
 }
 .pagination {
 	float: right;
@@ -1438,6 +1501,8 @@ li:hover .list {
 	background-color: #ffffff;
 	color: #353535;
 }
+
+
  .disabled {
 	opacity: 0.2;
 }
