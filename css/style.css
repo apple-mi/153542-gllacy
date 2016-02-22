@@ -245,15 +245,17 @@ h3 {
 .links {
 	width: 120px;
 	display: inline-block;
+	vertical-align: middle;
 	
 }
 .enter {
 	width: 100px;
 	display: inline-block;
 	margin-right: 18px;
+	vertical-align: middle;
 }
 .links a {
-	display: block;
+	
 	color: #333333;
 	font-size: 13px;
 	line-height: 24px;
@@ -390,6 +392,7 @@ table {
 .form_table td:nth-of-type(5) {
 	width: 68px;
 }
+
 .btn_delete a {
 	display: block;
 	width: 15px;
@@ -848,7 +851,9 @@ a.bdr:after {
 	bottom: 0;
 	font-weight: 700;
 }
-
+.catalog-item:nth-child(n+5) {
+	margin-top: 40px;
+}
 .hit:before {
 	content: "";
 	display: inline-block;
