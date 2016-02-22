@@ -223,9 +223,12 @@
 								<div class="delivery_block">
 									<p class="delivery_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 									<form class="email_block" action="" method="post">
-										<input id="subscription" class="email" type="text" name="email" placeholder="Электронная почта">
-										<label for="subscription"></label>
-										<button class="btn" type="submit">Отправить</button>
+										<div class="subscription">
+											<input id="subscription" class="email_field" type="text" name="email" placeholder="Электронная почта">
+											<label for="subscription" class="email_label"></label>
+										</div>
+											<button class="btn" type="submit">Отправить</button>
+
 									</form>
 								</div>
 							</div>
@@ -302,18 +305,30 @@
 			</div>
 			
 			<div class="modal_content">
+					
 					<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
-					<h3 class="modal_content_title">Мы обязательно вам ответим!</h3>
-					<form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
-						<input type="text" placeholder="Как вас зовут?"></input>
-						<input type="text" placeholder="Ваша почта для ответа?"></input>
-						<textarea name="text" cols="30" rows="5" placeholder="Напишите что нибудь..."></textarea>
-							
+					<form class="feedback_form" action="#canvas" method="post">
+
+						<h3 class="modal_content_title">Мы обязательно вам ответим!</h3>
+					
+						<div class="control">
+							<input id="modal_name" type="text" name="name" placeholder="Как вас зовут?"></input>
+							<label for="modal_name">Как вас зовут?</label>
+						</div>
+						<div>
+							<input id="modal_email" type="email" name="email" placeholder="Ваша почта для ответа?"></input>
+							<label for="modal_email">Ваша почта</label>
+						</div>
+						<div>
+							<textarea id="modal_text" name="text" cols="30" rows="5" placeholder="Напишите что нибудь..."></textarea>
+							<label for="modal_text">Напишите что-нибуть...</label>
+						</div>	
 						<input class="btn" type="sumbit" value="Отправить"></input>
 					</form>
 				</div>
 				<div class="modal_overlay"></div>
-			
+						
+
 	
 		<script>
 			var link = document.querySelector(".form_btn");
