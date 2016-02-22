@@ -851,7 +851,7 @@ a.bdr:after {
 	bottom: 0;
 	font-weight: 700;
 }
-.catalog-item:nth-child(n+5) {
+.catalog_item:nth-child(n+5) {
 	margin-top: 40px;
 }
 .hit:before {
