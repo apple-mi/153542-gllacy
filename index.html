@@ -12,9 +12,10 @@
 		<input class="hide" type="radio" name="ground_color" id="violet_2">
 		<input class="hide" type="radio" name="ground_color" id="brown_3">
 		<div class="wrapper">
-			<div class="content">
+		
+
 				<header class="main_header container clearfix">
-						<div class="right_item_container">
+						<div class="right_item_container clearfix">
 							<div class="right_item">
 								<div class="search_block">
 									<a class="search" href="#"></a>
@@ -54,18 +55,18 @@
 						</div>
 						<div class="logo">
 								<img src="img/logo.svg" alt="Логотип" width="155" height="65">
-							</div>
+						</div>
 						<nav class="main_navigation clearfix">
 							
 							<ul class="navigation">
 								<li>
 									<a href="#">Каталог</a>
-										<ul class="list">
-											<li><a class="catalog_list bdr" href="#">Новинки</a></li>
-											<li><a class="catalog_list" href="#">Сливочное</a></li>
-											<li><a class="catalog_list" href="#">Щербеты</a></li>
-											<li><a class="catalog_list" href="#">Фруктовый лед</a></li>
-											<li><a class="catalog_list" href="#">Мелорин</a></li>
+										<ul class="catalog_list">
+											<li><a class="bdr" href="#">Новинки</a></li>
+											<li><a href="catalog.html">Сливочное</a></li>
+											<li><a href="#">Щербеты</a></li>
+											<li><a href="#">Фруктовый лед</a></li>
+											<li><a href="#">Мелорин</a></li>
 										</ul>
 								</li>
 								<li>
@@ -77,7 +78,8 @@
 							</ul>
 						</nav>
 				</header>
-				<main class="main_container container">
+				<main class="main_container">
+					<div class="container">	
 						<div class="main_slide">
 							<div class="slider">
 								<div class="slide" id="slide_green_1">
@@ -94,9 +96,9 @@
 								</div>
 							</div>
 							<div class="slider_controls">
-								<label for="green_1" class="slide-label label_green_1"></label>
-								<label for="violet_2" class="slide-label label_violet_2"></label>
-								<label for="brown_3" class="slide-label label_brown_3"></label>
+								<label for="green_1" class="slide_label label_green_1"></label>
+								<label for="violet_2" class="slide_label label_violet_2"></label>
+								<label for="brown_3" class="slide_label label_brown_3"></label>
 							</div>
 						</div>
 						<div class="free_container">
@@ -175,37 +177,48 @@
 						<div class="news_delivery">
 							<div class="block_n_d news">
 								<p class="news_text">Новое в нашем блоге</p>
+								<div class="link_news">
 								<a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+								</div>
 							</div>
 							<div class="block_n_d delivery"> 
-								<p class="delivery_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-								<form class="email_block" action="" method="post">
-									<input id="subscription" class="email" type="text" name="email" placeholder="Электронная почта">
-									<label for="subscription"></label>
-									<button class="btn" type="submit">Отправить</button>
-								</form>
+								<div class="delivery_block">
+									<p class="delivery_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+									<form class="email_block" action="" method="post">
+										<input id="subscription" class="email" type="text" name="email" placeholder="Электронная почта">
+										<label for="subscription"></label>
+										<button class="btn" type="submit">Отправить</button>
+									</form>
+								</div>
 							</div>
 						</div>
+						<div class="map_block clearfix">
+							<div class="map_container">
+								<p>Адрес главного офиса и<br> 
+									офлайн магазина:<br>
+									<span>ул. Большая Конюшенная 19/8,Санкт-Петербург</span>
+								</p>
+								<p>Для заказов по телефону:<br>
+									<span>8 812 450-25-25</span><br>
+									(с 10 до 20 ежедневно)
+								</p>
+								<a class="btn form_btn" href="#">Форма обратной связи</a>
+							</div>
+						</div>
+					</div>
+					<div class="map_wrapper">
+						<div class="map">
+							<div id="yandex-map"></div>
+						</div>
+				</div>
+				
+
+
+
+
+
 				</main>
 				
-				<div class="map_wrapper">
-					<div id="yandex-map"></div>
-					
-				
-					<div class="map_container">
-						
-							<p>Адрес главного офиса и<br> 
-								офлайн магазина:<br>
-								<span>ул. Большая Конюшенная 19/8,Санкт-Петербург</span>
-							</p>
-							<p>Для заказов по телефону:<br>
-								<span>8 812 450-25-25</span><br>
-								(с 10 до 20 ежедневно)
-							</p>
-							<a class="btn form_btn" href="#">Форма обратной связи</a>
-					
-					</div>
-				</div> 
 				
 
 				<footer class="main_footer container clearfix">
@@ -246,8 +259,13 @@
 								</div>
 						</div>
 				</footer>
+				
 
-				<div class="modal_content modal_content_show">
+			</div>
+				
+			</div>
+			
+<div class="modal_content modal_content_show">
 					<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
 					<h3 class="modal_content_title">Мы обязательно вам ответим!</h3>
 					<form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
@@ -258,25 +276,30 @@
 						<input class="btn" type="sumbit" value="Отправить"></input>
 					</form>
 				</div>
-				<div class="modal_overlay"></div>
-			</div>
-			</div>
+				<div class="modal_overlay modal_overlay_show"></div>
+			
 	
 		<script>
 			var link = document.querySelector(".form_btn");
 			var popup = document.querySelector(".modal_content");
+			var overlay = document.querySelector(".modal_overlay");
 			var close = popup.querySelector(".modal_content_close");
 
 			link.addEventListener("click", function(event) {
 				event.preventDefault();
 				popup.classList.add("modal_content_show");
+				overlay.classList.add("modal_overlay_show");
 			});
 			close.addEventListener("click", function(event) {
 				event.preventDefault();
         		popup.classList.remove("modal_content_show");
+        		overlay.classList.remove("modal_overlay_show");
      		 });
 
-			</script>
-			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=slsxdqHWwdY-5qFIqNVyHxP3btxri642&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map"></script>
+        
+      });
+
+		</script>
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=slsxdqHWwdY-5qFIqNVyHxP3btxri642&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map"></script>
 	</body>
 </html>
