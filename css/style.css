@@ -104,12 +104,25 @@ h3 {
 .form_search input[type="text"] {
 	width: 100%;
 	padding: 6px 10px;
-	border: 1px solid #d3d3d2;
+	border: none;
+	box-shadow: 0 0 0 1px #d3d3d2;
 	border-radius: 5px;
 	color: #999999;
 	font-weight: 400;
 	line-height: 24px;
 }
+.form_search input[type="text"]:hover,
+.form_login input[type="text"]:hover,
+.form_login input[type="password"]:hover {
+	box-shadow: inset 0 0 0 2px #d3d3d2;
+}
+.form_search input[type="text"]:focus,
+.form_login input[type="text"]:focus,
+.form_login input[type="password"]:focus {
+	box-shadow: 0 0 0 2px #8fbdec;
+}
+
+
 .search_block:hover .form_search{
 	display: block;
 }
@@ -118,6 +131,7 @@ h3 {
 	width: 342px;
 	padding: 15px;
 	font-size: 14px;
+	position: relative;
 }
 .search_block a:hover {
 	color: #323232;
@@ -127,7 +141,7 @@ h3 {
 .search:hover::before {
 	background-image: url("../img/mini_img_all.png"); 
 	background-repeat: no-repeat;
-	background-position:  -109px -7px;  /*при наведении*/
+	background-position:  -109px -7px; 
 }
 .user_block {
 	display: inline-block;
@@ -185,7 +199,8 @@ h3 {
 .form_login input[type="text"] {
 	width: 100%;
 	padding: 6px 15px;
-	border: 1px solid #d3d3d2;
+	border: none;
+	box-shadow: 0 0 0 1px #d3d3d2;
 	border-radius: 5px;
 	color: #999999;
 	font-size: 14px;
@@ -193,10 +208,12 @@ h3 {
 	line-height: 24px;
 	margin-bottom: 10px;
 }
+
 .form_login input[type="password"] {
 	width: 100%;
 	padding: 6px 15px;
-	border: 1px solid #d3d3d2;
+	border: none;
+	box-shadow: 0 0 0 1px #d3d3d2;
 	border-radius: 5px;
 	color: #999999;
 	font-size: 14px;
@@ -204,6 +221,7 @@ h3 {
 	line-height: 24px;
 	margin-bottom: 15px;
 }
+
 .user_block:hover .form_login{
 	display: block;
 }
@@ -459,7 +477,7 @@ table {
 	line-height: 24px;
 }
 .main_navigation {
-	min-width: 50+0px;
+	min-width: 500px;
 	float: left;
 	margin-top: 23px;
 }
@@ -874,10 +892,15 @@ a.bdr:after {
 	display:inline-block
 }
 
-.catalog_item:hover .additional,.catalog_item:hover.catalog_item::before {
+.catalog_item:hover .additional,
+.catalog_item:hover.catalog_item::before {
 	display:block
 }
-.additional,.catalog_item::before,.catalog_item:hover .catalog_item,.catalog_price,.catalog_title {
+.additional,
+.catalog_item::before,
+.catalog_item:hover .catalog_item,
+.catalog_price,
+.catalog_title {
 	z-index:10
 }
 .catalog_item:hover .catalog_preview {
@@ -1045,7 +1068,7 @@ a.bdr:after {
 	top: -1px;
 	display: block;
 }
-.email_block input[type="text"] {
+.email_field {
 	background-color: #ffffff;
 	border-radius: 5px;
 	font-size: 16px;
@@ -1054,7 +1077,9 @@ a.bdr:after {
 	color: #999999;
 	padding: 9px 0 9px 10px;
 	width: 100%;
-	
+	margin-right: 10px;
+	border: none;
+	box-shadow: 0 0 0 1px #d3d3d2;
 }
 .email_block {
 	margin-right: 145px;
@@ -1063,14 +1088,7 @@ a.bdr:after {
 .subscription {
 	position: relative;
 }
-.email_field {
-	padding: 13px;
-	margin-right: 10px;
-	width: 100%;
-	border-radius: 5px;
-	border: none;
-	box-shadow: inset 0 0 0 1px #d3d3d2;
-}
+
 .email_field:hover {
 	box-shadow: inset 0 0 0 2px #d3d3d2;
 }
@@ -1078,35 +1096,36 @@ a.bdr:after {
 	outline: none;
 	box-shadow: inset 0 0 0 2px #8fbdec;
 }
-.email_label {
-	font-size: 16px;
-	top: 11px;
-	left: 11px;
-}
+
 .email_label {
 	display: block;
 	position: absolute;
 	transition: top 0.7s ease, opacity 0.7s ease;
 	opacity: 0;
 	color: #999;
+	font-size: 16px;
+	top: 11px;
+	left: 11px;
+	width: 100%;
 }
 .email_field:valid + .email_label {
 	top: -20px;
-	opacity: 1;
+	opacity: 0;
 	font-size: 14px;
 	color: #9a9a9a;
 }
 .email_field:not(:placeholder-shown) + .email_label {
 	top: -20px;
-	opacity: 1;
+	opacity: 0;
 	font-size: 14px;
 	color: #9a9a9a;
 }
 .email_field:focus + .email_label {
 	top: -20px;
 	opacity: 1;
-	font-size: 14px;
-	color: #5b9ddf;
+	font-size: 11px;
+	color: #8fbdec;
+	font-weight: 400;
 }
 
 
@@ -1179,6 +1198,9 @@ a.bdr:after {
 	font-size:24px;
 	line-height:22px;
 }
+.feedback_form, .control {
+	position: relative;
+}
 .modal_content input[type="text"],
 .modal_content input[type="email"], 
 .modal_content textarea {
@@ -1194,21 +1216,26 @@ a.bdr:after {
 	font-weight: 400;
 
 	background-color: #ffffff;
-	border: 1px solid #d3d3d2;
-	outline: none;
-	border-radius: 5px
-}
-.modal_content input[type="text"]:focus,
-.modal_content input[type="email"]:focus,
-.modal_content textarea:focus,{
-	box-shadow:0 0 0 1px rgba(46,136,228,.51);
-}
+	border: none;
+	box-shadow: 0 0 0 1px #d3d3d2;
 
+	outline: none;
+	border-radius: 5px;
+}
 .modal_content input[type="text"]:hover,
 .modal_content input[type="email"]:hover,
 .modal_content textarea:hover {
-	box-shadow:0 0 0 1px #b2b2b2
+	box-shadow: inset 0 0 0 2px #d3d3d2;
 }
+
+.modal_content input[type="email"]:focus,
+.modal_content input[type="text"]:focus,
+.modal_content textarea:focus {
+	/*outline: none;*/
+	box-shadow: inset 0 0 0 2px #8fbdec;
+}
+
+
 .modal_content textarea {
 	width: 426px;
 	margin: 0 auto;
@@ -1216,31 +1243,34 @@ a.bdr:after {
 
 }
 
-.modal_content input[type="email"]+label,
-.modal_content input[type="text"]+label,
-.modal_content textarea+label {
-	position:absolute;
-	top:-10px;
-	left:16px;
+.modal_content input[type="email"] + label,
+.modal_content input[type="text"] + label,
+.modal_content textarea + label {
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 16px;
 	transition:top .7s ease,opacity .7s ease;
-	opacity:0;
-	font-size:13px;
-	font-weight:400;
-	color:#ccc
+	opacity: 0;
+	font-size: 13px;
+	font-weight: 400;
+	color: #353535;
 }
-.modal_content input[type="email"]:valid+label,
-.modal_content input[type="text"]:valid+label,
-.modal_content textarea:valid+label {
-	color:#2c8efe;
-	font-size:11px;
-	font-weight:400
+.modal_content input[type="email"]:valid + label,
+.modal_content input[type="text"]:valid + label,
+.modal_content textarea:valid + label {
+	color: #8fbdec;
+	font-size: 11px;
+	font-weight: 400;
 }
-.modal_content input[type="email"]:valid+label,
-.modal_content input[type="text"]:focus+label,
-.modal_content textarea:focus+label {
+.modal_content input[type="email"]:focus + label,
+.modal_content input[type="text"]:focus + label,
+.modal_content textarea:focus + label {
 	opacity:1;
 	top:-20px;
-	font-weight:400
+	font-weight:400;
+	color: #8fbdec;
+
 }
 .feedback_form .btn {
 	border: none;
@@ -1248,9 +1278,10 @@ a.bdr:after {
 	font-size: 17px;
 	line-height: 24px;
 	position: absolute;
-	right: 24px;
-	bottom: 27px;
+	right: 0px;
+	bottom: -55px;
 	display: block;
+	width: 140px;
 }	
 
 .modal_overlay {
