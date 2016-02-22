@@ -608,7 +608,7 @@ a.bdr:after {
 	padding: 0;	
 }
 .catalog_list a:first-child {
-	border-radius: 7px 7px 0 0;
+	border-radius: 0 0 7px 7px;
 }
 .catalog_list a:last-child {
 	border-radius: 0 0 7px 7px;
