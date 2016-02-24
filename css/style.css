@@ -583,10 +583,10 @@ a.bdr::after {
 	background-color: rgba(53,53,53,0.2); 
 	padding: 0;
 }
-.catalog_list a:first-child {
-	border-radius: 0 0 7px 7px;
+.submenu:first-child a:hover, .submenu:first-child a:active {
+	border-radius: 7px 7px 0 0;
 }
-.catalog_list a:last-child {
+.submenu:last-child a:hover, .submenu:last-child a:active {
 	border-radius: 0 0 7px 7px;
 }
 
@@ -774,7 +774,7 @@ a.bdr::after {
 }
 
 .catalog_container {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 	font-size: 0px;
 }
 .catalog_item {
@@ -879,26 +879,27 @@ a.bdr::after {
 }
 
 .additional a,.catalog_item .catalog_btn {
-	position:relative;
-	display:inline-block
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .catalog_item:hover .additional,
 .catalog_item:hover.catalog_item::before {
-	display:block
+	display: block;
 }
 .additional,
 .catalog_item::before,
 .catalog_item:hover .catalog_item,
 .catalog_price,
 .catalog_title {
-	z-index:10
+	z-index: 10;
 }
 .catalog_item:hover .catalog_preview {
-	z-index:11
+	z-index: 11;
 }
 .catalog_item:hover .catalog_title {
-	z-index:12
+	z-index: 12;
 }
 .about_company {
 	display: inline-block;
@@ -990,7 +991,7 @@ a.bdr::after {
 }
 .link_news {
 	max-width: 300px;
-	line-height: 26px;
+	line-height: 30px;
 }
 
 .link_news a {
@@ -999,6 +1000,7 @@ a.bdr::after {
 	font-size: 24px;
 	color: #353535;
 	font-weight: 700;
+	line-height: 22px;
 }
 .link_news a:hover, .link_news a:active {
 	color: #ec593c;
@@ -1008,8 +1010,8 @@ a.bdr::after {
 	font-weight: 400;
 	color: #5a5a5a;
 	margin: 0;
-	padding-top: 10px;
-	padding-bottom: 35px;
+	padding-top: 8px;
+	padding-bottom: 40px;
 	font-size: 16px;
 	line-height: 22px;
 }
@@ -1279,7 +1281,7 @@ a.bdr::after {
 .map_wrapper {
 	position: relative;
 	overflow: visible;
-	margin-bottom: 36px;
+	/*margin-bottom: 36px;*/
 }
 .map_container {
 	position: relative;;
@@ -1765,7 +1767,7 @@ a.bdr::after {
 }
 .button .btn_button {
 	display: inline-block;
-	padding: 7px 45px;
+	padding: 7px 31px;
 	font-weight: 500;
 	font-size: 16px;
 	vertical-align: top;
