@@ -13,15 +13,14 @@
 		<input class="hide" type="radio" name="ground_color" id="brown_3">
 		<div class="wrapper">
 		
-
-				<header class="main_header  ">
+				<header class="main_header">
 					<div class="container clearfix">	
 						<div class="right_item_container clearfix">
 							<div class="right_item">
 								<div class="search_block">
 									<a class="search" href="#"></a>
 										<div class="form_search">
-											<form class="search_block_form" action="" method="post">
+											<form class="search_block_form" action="#" method="post">
 												<input id="search_block" type="text" placeholder="Что ищем?">
 												<label for="search_block"></label>
 											</form>
@@ -30,7 +29,7 @@
 								<div class="user_block">
 									<a class="login" href=" login.html">Вход</a>
 										<div class="form_login">
-											<form class="user_block_form" action="" method="post">
+											<form class="user_block_form" action="#" method="post">
 												<input id="email" type="text" placeholder="Электроная почта">
 												<input id="password" type="password" placeholder="Пароль">
 												<label for="email"></label>
@@ -61,7 +60,7 @@
 							
 							<ul class="navigation">
 								<li>
-									<a class="main_menu" href="#">Каталог</a>
+									<a class="main_menu" href="catalog.html">Каталог</a>
 										<ul class="catalog_list">
 											<li><a class="bdr" href="#">Новинки</a></li>
 											<li><a href="catalog.html">Сливочное</a></li>
@@ -76,6 +75,7 @@
 								<li>
 									<a class="main_menu" href="#">О Компании</a>
 								</li>
+
 							</ul>
 						</nav>
 					</div>
@@ -187,7 +187,7 @@
 							<div class="block_n_d delivery"> 
 								<div class="delivery_block">
 									<p class="delivery_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-									<form class="email_block" action="" method="post">
+									<form class="email_block" action="#" method="post">
 										<div class="subscription">
 											<input id="subscription" class="email_field" type="text" name="email" placeholder="Электронная почта">
 											<label for="subscription" class="email_label">Электронная почта</label>
@@ -265,10 +265,9 @@
 								</div>
 						</div>
 					</div>
-				</footer>
-				
+				</footer>		
 
-			</div>
+		</div>
 				
 						
 			<div class="modal_content">
@@ -292,11 +291,9 @@
 						</div>	
 						<input class="btn" type="submit" value="Отправить">
 					</form>
-				</div>
-				<div class="modal_overlay"></div>
-						
+			</div>
+			<div class="modal_overlay"></div>
 
-	
 		<script>
 			var link = document.querySelector(".form_btn");
 			var popup = document.querySelector(".modal_content");
@@ -310,13 +307,11 @@
 			});
 			close.addEventListener("click", function(event) {
 				event.preventDefault();
-        		popup.classList.remove("modal_content_show");
-        		overlay.classList.remove("modal_overlay_show");
-     		 });
+				popup.classList.remove("modal_content_show");
+				overlay.classList.remove("modal_overlay_show");
+			});
 
-        
-   
 		</script>
-		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=slsxdqHWwdY-5qFIqNVyHxP3btxri642&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map"></script>
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=slsxdqHWwdY-5qFIqNVyHxP3btxri642&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map"></script>
 	</body>
 </html>
